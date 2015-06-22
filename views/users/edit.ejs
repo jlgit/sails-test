@@ -1,0 +1,42 @@
+<div style="width: 600px;">
+<form action="users/save" method="post">
+    <input type="hidden" value="<%= user.id ? user.id : '' %>" name="id" />
+    <div class="row">
+        <div class="col-md-3 text-right">
+            Name
+        </div>
+        <div class="col-md-9">
+            <input type="text" value="<%= user.name ? user.name : '' %>" name="name" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            Username
+        </div>
+        <div class="col-md-9">
+            <input type="text" value="<%= user.username ? user.username : '' %>" name="username" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            Email
+        </div>
+        <div class="col-md-9">
+            <input type="text" value="<%= user.email ? user.email : '' %>" name="email" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            Password
+        </div>
+        <div class="col-md-9">
+            <input type="text" value="" name="password" class="form-control" />
+        </div>
+    </div>
+    <div class="text-right">
+        <button type="submit" class="btn btn-success">
+            Save
+        </button>
+    </div>
+</form>
+</div>
